@@ -1,0 +1,14 @@
+version: 2
+updates:
+
+  # Terraform into root
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  # Terraform into subfolder
+  - package-ecosystem: "terraform"
+    directory: "/subproject"
+    schedule:
+      interval: "daily"
